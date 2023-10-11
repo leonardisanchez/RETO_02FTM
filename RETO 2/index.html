@@ -2,33 +2,59 @@
 <html>
 <head>
     <title>Formulario</title>
+    <style>
+        body {
+            background-image: url('/RETO 2/img/unnamed.png'); 
+            background-size: cover; 
+            background-attachment: fixed; 
+            text-align: center;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.8); 
+            margin: 0 auto;
+            width: 50%;
+            text-align: left;
+            padding: 85px;
+        }
+
+        #container form {
+            text-align: left;
+        }
+
+        #container img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <h2>BIENVENIDOS</h2>
+    <div id="container">
+        <h2>BIENVENIDOS</h2>
 
-    <img src="img/logo.png" width="200" >
+        <img src="img/logo.png" width="200">
 
-    <form action="procesar.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="Apellido">Apellido:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="Edad">Edad:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="Conraseña">Contraseña:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
-        
-        <input type="submit" value="Enviar">
-    </form>
+        <form action="procesar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+
+            <label for="Edad">Edad:</label>
+            <input type="text" id="edad" name="edad" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="Conraseña">Contraseña:</label>
+            <input type="text" id="contrasena" name="contrasena" required><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
-
